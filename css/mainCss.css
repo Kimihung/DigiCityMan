@@ -1,0 +1,58 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.frame{
+	background: red;
+	box-shadow: 0px 1px 1px 1px #C0C0CA; 
+	border:1px solid #223249;
+}
+.frame-top{
+	height: 50px;
+	position: relative;
+}
+.frame-bottom{
+	width:100%;
+	height: 120px;
+	position: absolute;
+	bottom: 0px;
+}
+.frame-head{
+	width: 300px;
+	height: 0px;
+	border: 10px solid;
+	background-color: transparent;
+	border-color: #dddddd transparent transparent transparent;
+	position: absolute;
+	top: 40px;
+	left: 0px;
+}
+.frame-welcome{
+	width: 200px;
+	height: 0px;
+	border: 10px solid;
+	border-color: transparent transparent #223249 transparent;
+	position: absolute;
+	top: -21px;
+	left: 0px;
+}
+.frame-hide{
+	width: 50px;
+	height: 0px;
+	border: 10px solid;
+	border-color: transparent transparent #223249 transparent;
+	position: absolute;
+	top: -21px;
+	right: 0px;
+}
+#timeWeather{
+	width: 200px;
+	height: 100px;
+	background: #69779A;
+	border: 1px solid #6F9ABA;
+	border-radius: 3px;
+	box-shadow: 0px 1px 1px 1px #C0C0CA inset;
+}
+#www{
+	background-color: #aaaaaa;
+}
