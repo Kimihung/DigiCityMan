@@ -3,8 +3,8 @@
 	margin: 0px;
 }
 .frame{
-	background: #647392;
-	border:1px solid #647392;
+	background: #364247;
+	border:1px solid #364247;
 }
 .frame-top{
 	height: 50px;
@@ -22,7 +22,7 @@
 	background-color: transparent;
 	border: 10px solid transparent;
 	border-bottom-width: 0px;
-	border-top-color: #647392;
+	border-top-color: #364247;
 	position: absolute;
 	top: 50px;
 	left: 0px;
@@ -30,18 +30,17 @@
 .frame-welcome{
 	width: 200px;
 	height: 0px;
-	border: 10px solid;
 	background-color: transparent;
-	border: 10px solid transparent;
+	border: 20px solid transparent;
 	border-top-width: 0px;
-	border-bottom-color: #647392;
+	border-bottom-color: #364247;
 	position: absolute;
-	top: -10px;
+	top: -20px;
 	left: 0px;
 }
 .frame-welcome p{
 	margin: 3px 0px;
-	color: #FAEEF0;
+	color: #FEFEFE;
 	font-size: 14px;
 	font-family: "Microsoft Yahei";
 	line-height: 18px;
@@ -54,7 +53,7 @@
 	background-color: transparent;
 	border: 10px solid transparent;
 	border-top-width: 0px;
-	border-bottom-color: #647392;
+	border-bottom-color: #364247;
 	position: absolute;
 	top: -10px;
 	right: 0px;
@@ -62,15 +61,30 @@
 #timeWeather{
 	width: 200px;
 	height: 90px;
-	background: #192940;
 	border-radius: 3px;
 	float: left;
-	margin:15px 0px 5px 10px;
+	margin:5px 0px 5px 10px;
+	position: relative;
+}
+#timeWeather p{
+	width: 50px;
+	height: 50px;
+	color: #99A1A6;
+	margin: 0px 45px;
+	font-size: 50px;
+	font-family: "sans-serif";
+}
+#timeWeather div{
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	bottom: 0px;
+	background: url(http://mat1.gtimg.com/weather/2014gaiban/TB_mai.png);
+
 }
 #funcMenu{
 	width: 500px;
 	height: 90px;
-	background: #192940;
 	border-radius: 3px;
 	float: left;
 	margin:15px 0px 5px 10px;
@@ -90,7 +104,6 @@
 }
 #shtctMenu{
 	height: 90px;
-	background: #192940;
 	border-radius: 3px;
 	float: left;
 	margin:15px 0px 5px 10px;
