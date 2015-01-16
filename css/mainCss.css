@@ -40,9 +40,9 @@
 }
 .frame-welcome p{
 	margin: 3px 0px;
-	color: #FEFEFE;
+	color: #D3DCE0;
 	font-size: 14px;
-	font-family: "Microsoft Yahei";
+	font-family: "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;;
 	line-height: 18px;
 	text-align: center;
 }
@@ -69,10 +69,11 @@
 #timeWeather p{
 	width: 50px;
 	height: 50px;
-	color: #99A1A6;
+	color: #D3DCE0;
 	margin: 0px 45px;
 	font-size: 50px;
-	font-family: "sans-serif";
+	font-weight: 200;
+	font-family: "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;;
 }
 #timeWeather div{
 	width: 90px;
@@ -80,7 +81,6 @@
 	position: absolute;
 	bottom: 0px;
 	background: url(http://mat1.gtimg.com/weather/2014gaiban/TB_mai.png);
-
 }
 #funcMenu{
 	width: 500px;
@@ -90,22 +90,41 @@
 	margin:15px 0px 5px 10px;
 	position: relative;
 }
-#funcMenu ul{
-	list-style: none;
-	margin: 0px 10px;
+#funcMenu p{
+	margin: 0px 25px;
+	padding: 0px 0px 10px 0px;
+	font: 12px "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
+	color: #D3DCE0;
+	text-align: left;
+	line-height: 12px;
+	border-bottom: 1px solid #99A1A6;
 }
-#funcMenu ul li a{
+#shtctMenu{
+	height: 90px;
+	width: 300px;
+	border-radius: 3px;
+	float: left;
+	margin:15px 0px 5px 10px;
+}
+#shtctMenu p{
+	margin: 0px 25px;
+	padding: 0px 0px 10px 0px;
+	font: 12px "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
+	color: #D3DCE0;
+	text-align: left;
+	line-height: 12px;
+	border-bottom: 1px solid #99A1A6;
+}
+.button{
+	list-style: none;
+	margin: 0px 15px;
+}
+.button a{
 	display: block;
 	width: 50px;
 	height: 50px;
 	margin: 10px;
 	background-color: #FAEBEE;
 	float: left;
-}
-#shtctMenu{
-	height: 90px;
-	border-radius: 3px;
-	float: left;
-	margin:15px 0px 5px 10px;
 }
 
