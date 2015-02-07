@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html,body,#map {
+	height: 100%;
+}
+body{
+	font-size: 14px;
+	font-family: "Microsoft Yahei", Times, TimesNR, 'New Century Schoolbook', Georgia,'New York', serif; 
+	overflow: hidden;
+}
+.header,.footer{
+	background-color: rgb(255,255,255);
+	position: absolute;
+	opacity: 0.5;
+}
+.header{
+	height: 75px;
+	left: 75px;
+	right: 75px;
+	border-radius: 0 0 5px 5px;
+	box-shadow:0px 2px 0px #aaaaaa;
+	z-index: 31;
+}
+.header::before,.header::after{
+	content: "";
+	width: 107px;
+	height: 107px;
+	background-color: rgb(255,255,255);
+	border-radius: 5px;
+	box-shadow:0px 2px 0px #aaaaaa;
+	position: absolute;
+	z-index: 31;
+}
+.header::before{
+	-webkit-transform-origin: 100% 100%;
+	-webkit-transform: rotate(45deg);
+	left: -107px;
+	top: -32px;
+}
+.header::after{
+	-webkit-transform-origin: 0% 100%;
+	-webkit-transform: rotate(-45deg);
+	right: -107px;
+	top: -32px;
+}
+.footer{
+	height: 150px;
+	left: 75px;
+	right: 75px;
+	bottom: 0px;
+	border-radius: 0 0 5px 5px;
+	box-shadow:0px -2px 0px #aaaaaa;
+	z-index: 31;
+}
+.footer::before,.footer::after{
+	content: "";
+	width: 168px;
+	height: 168px;
+	background-color: rgb(255,255,255);
+	border-radius: 5px;
+	box-shadow:0px -2px 0px #aaaaaa;
+	position: absolute;
+	z-index: 31;
+}
+.footer::before{
+	-webkit-transform-origin: 100% 0%;
+	-webkit-transform: rotate(-45deg);
+	left: -168px;
+}
+.footer::after{
+	-webkit-transform-origin: 0% 0%;
+	-webkit-transform: rotate(45deg);
+	right: -168px;
+}
+#logo{
+	float: left;
+	position: relative;
+	top: 3px;
+	z-index: 32;
+	opacity: 1；
+}
+#logo h1{
+	font-size: 32px;
+	display: block;
+	padding: 10px 0px 0px 80px;
+	width: 400px;
+	height: 50px;
+}
+.nav{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	z-index: 32;
+}
+.nav li{
+	float: left;
+}
+.nav li a{
+	width: 35px;
+	height: 35px;
+	padding: 10px;
+	display: block;
+	background-color: #555;
+}
+#photo{
+	border-radius: 50%;
+	background-image: url("../image/照片small.jpg");
+}
