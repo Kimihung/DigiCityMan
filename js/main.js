@@ -54,8 +54,6 @@ $(function(){
   "}</style>")
     $('html > head').append(style);
   }
-  
-
   $("#button").hover(
     function(){
       $("#cn-wrapper").css("-webkit-transform","scale(1)");
