@@ -3,111 +3,193 @@
     margin: 0;
     list-style: none;
 }
-html,body,#map {
+html,body {
 	height: 100%;
 }
 body{
-	font-size: 14px;
+	font-size: 12px;
 	font-family: "Microsoft Yahei", Times, TimesNR, 'New Century Schoolbook', Georgia,'New York', serif; 
 	overflow: hidden;
 }
-.header,.footer{
-	background-color: rgb(255,255,255);
+#map{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.header,.footer,.sideBar{
+	background-color: #ddd;
 	position: absolute;
-	opacity: 0.7;
+}
+.header,.footer{
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #DDD), color-stop(120px, #DDD), color-stop(150px, #FFF),color-stop(180px, #DDD), color-stop(300px, #DDD));
 }
 .header{
-	height: 75px;
-	left: 75px;
-	right: 75px;
-	border-radius: 0 0 5px 5px;
-	box-shadow:0px 2px 0px #aaaaaa;
-	z-index: 31;
-}
-.header::before,.header::after{
-	content: "";
-	width: 107px;
-	height: 107px;
-	background-color: rgb(255,255,255);
-	border-radius: 5px;
-	box-shadow:0px 2px 0px #aaaaaa;
-	position: absolute;
-	z-index: 31;
+	height: 100px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	box-shadow: 0px 5px 5px #666;
+	z-index: 32;
 }
 .header::before{
-	-webkit-transform-origin: 100% 100%;
-	-webkit-transform: rotate(45deg);
-	left: -107px;
-	top: -32px;
+	content: "Digital City Management System";
+	font-size: 36px;
+	font-family: "SimHei";
+	color: #616360;
+	position: absolute;
+	left: 125px;
+	top: 25px;
 }
-.header::after{
-	-webkit-transform-origin: 0% 100%;
-	-webkit-transform: rotate(-45deg);
-	right: -107px;
-	top: -32px;
+.sideBar{
+	width: 300px;
+	height: 100%;
+	left: 0px;
+	background-image: url("../image/metalBg.png");
+    background-repeat: repeat-y;
+	box-shadow: 5px 0px 5px #666;
+	z-index: 31;
+	-webkit-transition: -webkit-transform .5s linear;
 }
 .footer{
-	height: 150px;
-	left: 75px;
-	right: 75px;
+	height: 25px;
+	left: 0px;
+	right: 0px;
 	bottom: 0px;
-	border-radius: 0 0 5px 5px;
-	box-shadow:0px -2px 0px #aaaaaa;
-	z-index: 31;
-}
-.footer::before,.footer::after{
-	content: "";
-	width: 168px;
-	height: 168px;
-	background-color: rgb(255,255,255);
-	border-radius: 5px;
-	box-shadow:0px -2px 0px #aaaaaa;
-	position: absolute;
-	z-index: 31;
+	box-shadow: 0px -5px 5px #666;
+	z-index: 32;
 }
 .footer::before{
-	-webkit-transform-origin: 100% 0%;
-	-webkit-transform: rotate(-45deg);
-	left: -168px;
-}
-.footer::after{
-	-webkit-transform-origin: 0% 0%;
-	-webkit-transform: rotate(45deg);
-	right: -168px;
+	content: "Copyright © 2015 Cinque. All rights reserved.";
+	color: #616360;
+	position: absolute;
+	top: 4px;
+	right: 50px;
 }
 #logo{
-	float: left;
-	position: relative;
-	top: 3px;
-	z-index: 32;
-	opacity: 1；
-}
-#logo h1{
-	font-size: 32px;
 	display: block;
-	padding: 10px 0px 0px 80px;
-	width: 400px;
-	height: 50px;
-}
-.nav{
 	position: absolute;
-	top: 10px;
-	right: 20px;
+	width: 72px;
+	height: 72px;
+ 	top: 14px;
+ 	left: 29px;
+ 	z-index: 34;
+}
+.sideBarTopCover{
+	width: 300px;
+	height: 155px;
+	background-image: url("../image/sidebar_topCover_shadow.png");
+    position: absolute;
+	top: 75px;
+	z-index: 33;
+}
+.sideBarBottomCover{
+	width: 300px;
+	height: 2005px;
+	position: absolute;
+	top: 220px;
+	-webkit-transition: -webkit-transform .6s ease-in-out;
+	z-index: 33;
+}
+.clock{
+	display: block;
+	width: 200px;
+	height: 50px;
+	margin: 40px auto;
+	text-align: center;
+	font-size: 36px;
+	font-family: digital, arial, verdana;
+	color: #666;
+	line-height: 50px;
+}
+.sideBarBottomCover_up{
+    width: 100%;
+    height: 100px;
+    top: 0px;
+    background-image: url("../image/sidebar_bottomCover_up_noShadow.png");
+}
+.sideBarBottomCover_bottom{
+    width: 100%;
+    height: 100%;
+    top: 100px;
+    background-image: url("../image/sidebar_bottomCover_bottom.png");
+}
+#sideBarBottomCover_leftShadow{
+	width: 100px;
+	height: 10px;
+	left: 0px;
+	top: 5px;
+	border-radius: 3px 0px 0px 0px;
+}
+#sideBarBottomCover_rightShadow{
+	width: 100px;
+	height: 10px;
+	left: 200px;
+	top: 5px;
+	border-radius: 0px 3px 0px 0px;
+}
+#sideBarBottomCover_circleShadow{
+	width: 100px;
+	height: 50px;
+	left: 100px;
+	top: 5px;
+	border-radius: 0px 0px 50px 50px;
+	background-color: rgba(255,255,255,0);
+}
+.slide{
+	width: 20px;
+	height: 80px;
+	left: 300px;
+	position: absolute;
+	background-image: url("../image/metalSlide.png");
 	z-index: 32;
 }
-.nav li{
+#slideArrow{
+	width: 0px;
+	height: 0px;
+	border: 20px solid rgba(255,255,255,0);
+	border-right: 10px solid #DDD;
+	border-left-width: 0px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	z-index: 33;
+	-webkit-transition: border-right-color .3s linear;
+	-webkit-transform-origin: 50% 50%;
+}
+.menu{
+	display: block;
+	width: 280px;
+	height: 100px;
+	position: absolute;
+	left: 10px;
+	top: 400px;
+}
+.menu ul{
+	width: 100%;
+	height: 100%;
+}
+.menu li{
+	width: 100px;
+	height: 100px;
 	float: left;
 }
-.nav li a{
-	width: 35px;
-	height: 35px;
-	padding: 10px;
-	display: block;
+.menu li a{
 	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	
 }
-#photo{
-	border-radius: 50%;
-	background-image: url("../image/照片small.jpg");
-	background-size: 100% 100%;
+.menu .icon{
+	display: block;
+	margin: 25px auto;
+	color: #BBB;
+	font-size: 72px;
+	text-align: center;
+    text-shadow:0px -5px 5px #000;
 }
+
+
 

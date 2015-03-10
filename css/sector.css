@@ -1,33 +1,66 @@
-#button{
+#switch{
 	display: block;
-	width: 75px;
-	height: 75px;
-	text-decoration: none;
-	text-align: center;
-	line-height: 75px;
-	color: #FFF;
-	font-size: 18px;
-	background-color: #2555D1;
+	width: 100px;
+	height: 100px;
+	background-image: url("../image/switch.png");
 	border-radius: 50%;
+	text-decoration: none;
 	position: absolute;
-	left: 0px;
-	right: 0px;
-	top: 0px;
-	bottom: 0px;
-	margin: auto;
-	z-index: 32;	
+	left: 100px;
+	top: 175px;
+	z-index: 35;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+}
+#switch_shadow{
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    left: 100px;
+    top: 175px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 8px #222;
+    z-index: 34;
+}
+/*#switch::after{*/
+    /*content: "";*/
+    /*display: block;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*position: absolute;*/
+    /*left: 0px;*/
+    /*top: 0px;*/
+    /*border-radius: 50%;*/
+    /*box-shadow: 0px 8px 8px #222;*/
+    /*z-index: 34;*/
+/*}*/
+#switch i{
+	display: block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #666;
+	text-shadow:-1px 0 #333,    /*向左阴影*/  
+                0 -1px #333,    /*向上阴影*/  
+                1px 0 #fff,     /*向右阴影*/  
+                0 1px #fff;     /*向下阴影*/  
+	text-align: center;
+	margin: 5px auto;
 }
 #cn-wrapper{
 	position: absolute;
 	margin: auto;
-	left: 0px;
-	right: 0px;
-	top: 0px;
-	bottom: 0px;
-	width: 250px;
-	height: 250px;
+	width: 280px;
+	height: 280px;
+	top: 85px;
+	left: 10px;
 	border-radius: 50%;
-	-z-index: 31;
+	background-image: url("../image/glass.png");	
+	box-shadow: 0px 7px 5px #333;
+	z-index: 32;
 	overflow: hidden;
 	-webkit-transition: -webkit-transform .3s ease-in-out .3s;
 	-webkit-transform: scale(0);
@@ -36,8 +69,8 @@
 	display: block;
 	width: 180px;
 	height: 180px;
-	left: -55px;
-	top: -55px;
+	left: -40px;
+	top: -40px;
 	position: absolute;
 	overflow: hidden;
 	-webkit-transform-origin:100% 100%;
@@ -45,24 +78,49 @@
 #cn-wrapper li a{
 	display: block;
 	border-radius: 50%;
-	width: 300px;
-	height: 300px;
-	top: 30px;
-	left: 30px;
+	width: 280px;
+	height: 280px;
+	top: 40px;
+	left: 40px;
 	position: absolute;
-	text-decoration: none;	
-	background: -webkit-radial-gradient(transparent 25%, #2555D1 20%);
+	text-decoration: none;
+	-webkit-transform-origin:50% 50%;
 }
 #cn-wrapper li a i{
 	display: block;
-	margin: 45px auto;
-	color: #FFF;
+	margin: 25px auto;
+	color: #BBB;
 	font-size: 30px;
 	text-align: center;
-
+    text-shadow:0px -5px 5px #000;
+    z-index: 40;
 }
-#cn-wrapper li a:hover,
+
+/*#cn-wrapper li a i:hover{*/
+	/*-webkit-animation: neon 0.6s ease-in-out infinite alternate;*/
+/*}*/
+/*#cn-wrapper li a span{
+	display: block;
+	margin: 50px auto;
+	width: 50px;
+}*/
+/*#cn-wrapper li a:hover,
 #cn-wrapper li a:active,
 #cn-wrapper li a:focus{
 	background: -webkit-radial-gradient(transparent 25%, #1D42A2 20%);
+}*/
+
+/*#cn-wrapper li:nth-child(1){
+	-webkit-transform:rotate(-44deg) skew(50deg);
 }
+#cn-wrapper li:nth-child(1) a{
+	-webkit-transform:skew(-50deg) rotate(-70deg);
+}
+
+#cn-wrapper li:nth-child(2){
+	-webkit-transform:rotate(-88deg) skew(50deg);
+}
+#cn-wrapper li:nth-child(2) a{
+	-webkit-transform:skew(-50deg) rotate(88deg);
+}*/
+
